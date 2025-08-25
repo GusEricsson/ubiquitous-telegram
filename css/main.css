@@ -1,5 +1,7 @@
 /* Clinicmaster Website UI Style Guide */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
+
 /* 1. Typography */
 :root {
   --font-title: 'Open Sans', Arial, sans-serif;
@@ -47,6 +49,18 @@ body, p {
   font-weight: var(--font-weight-regular);
   line-height: 1.6;
   color: #2D1939; /* Mulberry */
+}
+
+/* Status bar */
+.status-bar {
+  font-family: var(--font-body);
+  font-size: 1.125rem; /* 18px */
+  font-weight: var(--font-weight-regular);
+  text-align: center;
+  line-height: 1.6;
+  background-color: #2D1939; /* Mulberry */
+  color: #FFFFFF; /* White */
+  padding: 0.5rem 0;
 }
 
 /* Navigation */
