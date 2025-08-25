@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinicmaster - Transform Your Practice, Not Your Workflow</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description"
+        content="Comprehensive healthcare practice management platform combining clinical sophistication with seamless user experience. Transform your practice with intelligent care management." />
+</head>
+
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-soft sticky top-0 z-50">
+
+        <!-- Monthly Updatable Status Bar -->
+        <div class="bg-background-mulberry text-white text-center py-2 text-md font-medium ">
+            <a href="https://ai.clinicmaster.com/">To empower your clinic with Clinicmaster's AI Suite <i><u>Click
+                        here</u></i></a>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+
+                <!-- Logo as Home Button -->
+                <div class="flex-shrink-0 flex items-center">
+                    <button onclick="window.location.href='homepage.html'" class="focus:outline-none">
+                        <img src="../assets/images/logo-horizontal-emblem.svg" alt="Clinicmaster Logo"
+                            class="h-8 w-auto" loading="lazy"
+                            onerror="handleImgError(this, 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2940&auto=format&fit=crop')" />
+                    </button>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+
+                        <!-- Features Dropdown -->
+                        <div class="relative">
+                            <button onclick="toggleFeaturesDropdown()"
+                                class="text-text-secondary hover:text-secondary transition-smooth px-3 py-2 rounded-md text-sm flex items-center">
+                                Product
+                                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div id="features-dropdown"
+                                class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 hidden">
+                                <!--<a href="platform_demo.html" class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Personalized Demo</a> -->
+                                <a href="product_features_schedulingandcasemanagement.html"
+                                    class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Scheduling
+                                    & Case Management</a>
+                                <a href="emr_features.html"
+                                    class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Electronic
+                                    Medical Records</a>
+                                <a href="revenue_cycle_management_features.html"
+                                    class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Revenue
+                                    Cycle Management</a>
+                                <a href="practice_management_features.html"
+                                    class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Practice
+                                    Management</a>
+                                <a href="client_engagement_features.html"
+                                    class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Client
+                                    Engagement</a>
+                                <a href="business_intelligence_features.html"
+                                    class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Business
+                                    Intelligence</a>
+                                <a href="security_compliance.html"
+                                    class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Security</a>
+                                <a href="integration_features.html"
+                                    class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Partner
+                                    Integrations</a>
+                                <a href="https://ai.clinicmaster.com/"
+                                    class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">AI
+                                    Suite</a>
+                            </div>
+                        </div>
+
+                        <!-- Solutions for Dropdown -->
+                        <!--<div class="relative">
+                            <button onclick="toggleWhoWeCareForDropdown()" class="text-text-secondary hover:text-secondary transition-smooth px-3 py-2 rounded-md text-sm flex items-center">
+                                Solutions For
+                                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                            <div id="whowecarefor-dropdown" class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 hidden">
+                                <a href="#" class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Small Business</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Medium Business</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Enterprise</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Physio</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Psychology</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Massage therapy</a>
+                            </div>
+                        </div>
+                        -->
+
+
+                        <a href="pricing.html"
+                            class="text-text-secondary hover:text-secondary transition-smooth px-3 py-2 rounded-md text-sm">Pricing</a>
+
+                        <!-- Resource Hub Dropdown -->
+                        <div class="relative">
+                            <button onclick="toggleResourceHubDropdown()"
+                                class="text-text-secondary hover:text-secondary transition-smooth px-3 py-2 rounded-md text-sm flex items-center">
+                                Resource Hub
+                                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div id="resourcehub-dropdown"
+                                class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 hidden">
+                                <a href="customer_stories.html"
+                                    class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Customer
+                                    Stories Hub
+                                </a>
+                                <a href="resources_hub.html"
+                                    class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Healthcare
+                                    Knowledge Hub
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="implementation_support.html"
+                            class="text-text-secondary hover:text-secondary transition-smooth px-3 py-2 rounded-md text-sm">
+                            How We Care
+                        </a>
+
+                        <!-- AI Suite Dropdown -->
+                        <div class="relative">
+                            <button onclick="toggleAiSuiteDropdown()"
+                                class="text-text-secondary hover:text-secondary transition-smooth px-3 py-2 rounded-md text-sm flex items-center">
+                                AI Suite
+                                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div id="aisuite-dropdown"
+                                class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 hidden">
+                                <a href="ai_charting_features.html"
+                                    class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">AI
+                                    Charting
+                                </a>
+                                <a href="https://ai.clinicmaster.com/en/charting"
+                                    class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">AI
+                                    Receptionist
+                                </a>
+                                <a href="https://ai.clinicmaster.com/en/charting"
+                                    class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">AI
+                                    Chatbot
+                                </a>
+                                <a href="https://ai.clinicmaster.com/en/charting"
+                                    class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">AI
+                                    Data Explorer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="demo_booking_form.html" class="btn-third hover:shadow-modal">Request Demo</a>
+                </div>
+
+                <!-- Language-->
+                <div class="hidden md:block">
+                    <button onclick="toggleLanguageDropdown()"
+                        class="flex items-center space-x-2 px-3 py-2 rounded-md text-sm text-text-secondary hover:text-primary transition-smooth">
+                        <span id="current-lang-name">EN</span>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button"
+                        class="text-text-secondary hover:text-secondaryfocus:outline-none focus:text-primary"
+                        onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-border">
+                <a href="homepage.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Home</a>
+
+                <!-- Mobile Features Dropdown -->
+                <div class="block">
+                    <button onclick="toggleMobileFeaturesDropdown()"
+                        class="w-full text-left text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between">
+                        Features
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="mobile-features-dropdown" class="pl-6 hidden">
+                        <a href="platform_demo.html"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">Personalized
+                            Demo</a>
+                        <a href="scheduling_features.html"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">Scheduling
+                            & Case Management</a>
+                        <a href="emr_features.html"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">Electronic
+                            Medical Records</a>
+                        <a href="revenue_cycle_management_features.html"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">Revenue
+                            Cycle Management</a>
+                        <a href="practice_management_features.html"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">Practice
+                            Management</a>
+                        <a href="client_engagement_features.html"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">Client
+                            Engagement</a>
+                        <a href="business_intelligence_features.html"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">Business
+                            Intelligence</a>
+                        <a href="security_compliance.html"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">Security</a>
+                        <a href="integration_features.html"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">Partner
+                            Integrations</a>
+                        <a href="https://ai.clinicmaster.com/"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">AI
+                            Suite</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Who we care for Dropdown -->
+                <div class="block">
+                    <button onclick="toggleMobileWhoWeCareForDropdown()"
+                        class="w-full text-left text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between">
+                        Who We Care For
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="mobile-whowecarefor-dropdown" class="pl-6 hidden">
+                        <a href="#"
+                            class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Small
+                            Business</a>
+                        <a href="#"
+                            class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Medium
+                            Business</a>
+                        <a href="#"
+                            class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Enterprise</a>
+                        <a href="#"
+                            class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Physio</a>
+                        <a href="#"
+                            class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Psychology</a>
+                        <a href="#"
+                            class="block px-4 py-2 text-sm text-text-secondary hover:secondary hover:text-secondary transition-smooth">Massage
+                            therapy</a>
+                    </div>
+                </div>
+
+                <a href="pricing_roi_calculator.html"
+                    class="text-text-secondary hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">Pricing
+                    & ROI</a>
+
+
+                <!-- Mobile AI Suite Dropdown -->
+                <div class="block">
+                    <button onclick="toggleMobileAiSuiteDropdown()"
+                        class="w-full text-left text-text-secondary hover:text-secondary block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between">
+                        AI Suite
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="mobile-aisuite-dropdown" class="pl-6 hidden">
+                        <a href="ai_charting_features.html"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">AI
+                            Charting</a>
+                        <a href="https://ai.clinicmaster.com/en/charting"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">AI
+                            Receptionist</a>
+                        <a href="https://ai.clinicmaster.com/en/charting"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">AI
+                            Chatbot</a>
+                        <a href="https://ai.clinicmaster.com/en/charting"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">AI Data
+                            Explorer</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Resource Hub Dropdown -->
+                <div class="block">
+                    <button onclick="toggleMobileResourceHubDropdown()"
+                        class="w-full text-left text-text-secondary hover:text-secondary block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between">
+                        Resource Hub
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="mobile-resourcehub-dropdown" class="pl-6 hidden">
+                        <a href="customer_stories.html"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">Customer
+                            Stories Hub</a>
+                        <a href="resources_hub.html"
+                            class="block px-3 py-2 text-sm text-text-secondary hover:text-secondary rounded-md">Healthcare
+                            Knowledge Hub</a>
+                    </div>
+                </div>
+
+                <a href="implementation_support.html"
+                    class="text-text-secondary hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">How
+                    We Care</a>
+                <a href="platform_demo.html" class="btn-third hover:shadow-modal block text-center mt-4">Request
+                    Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-primary-50 overflow-hidden">
+        <div class="absolute inset-0 bg-white/50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-28">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold text-primary mb-4 sm:mb-6">
+                        Elevate Your Clinic with a Scalable Practice Management Platform Built for Growth
+                    </h1>
+
+                    <!-- Salmon line visual, left-aligned with H1 -->
+                    <div style="height:6px; width:25%; background-color:#FA8072; margin:0 0 1.5rem 0; border-radius:3px;"
+                        class=""></div>
+
+                    <p class="text-lg sm:text-xl text-secondary mb-6 sm:mb-8 max-w-2xl mx-auto lg:mx-0">
+                        From single clinics to large enterprises, ClinicMaster brings scheduling, billing, charting, and
+                        patient engagement together on one secure platform. With AI-assisted tools, it saves time,boosts
+                        efficiency, and elevates care.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+                        <a href="demo_booking_form.html" class="btn-third text-center hover:shadow-modal">Book a
+                            Demo</a>
+                        <a href="https://info.clinicmaster.com/compare-our-practice-management-platform"
+                            class="px-6 py-3 bg-white border border-secondary text-secondary-btn rounded-lg font-semibold hover:bg-primary-50 transition-smooth text-center">Explore
+                            AI Suite</a>
+                    </div>
+
+                            
+                    <!-- Review Badges -->
+                    <div class="flex flex-wrap justify-left items-left gap-4 mt-4 mb-8">
+                        <!-- SOC 2 Badge -->
+                        <div class="flex items-center gap-2 inline-flex mx-4">
+                            <svg class="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span class="text-sm font-medium text-text-secondary">SOC 2 Certified</span>
+                        </div>
+                        <!-- PIPEDA Badge -->
+                        <img src="../assets/images/PIPEDA_Trusted.png" alt="PIPEDA Trusted badge" class="flex items-center gap-2 inline-flex mx-4 w-12 h-12"/>
+                        <!-- HIPAA Badge -->
+                        <img src="../assets/images/HIPAA.jpg" alt="HIPAA Trusted Badge" class="flex items-center gap-2 inline-flex mx-4 w-16 h-12"/>
+                        <!-- MS Impact Award Badge -->
+                        <img src="../assets/images/MSImpactAward23.png" alt="Microsoft Impact Award 2023 badge" class="flex items-center gap-2 inline-flex mx-4 w-18 h-12"/>
+                    </div>
+
+                    <!--Capterra Badges-->
+                    <div class="flex flex-wrap justify-left items-left gap-4 mt-4 mb-8">                        
+                        <a href="https://www.capterra.com/p/217435/Clinicmaster/reviews/" target="_blank" rel="noopener">
+                            <img src="https://brand-assets.capterra.com/badge/10e80280-f7a1-46ca-8b00-e341f62a8fb8.svg"
+                                alt="Capterra Badge" class="h-12 w-auto" style="max-width:120px;" />
+                        </a>
+                        <a href="https://www.getapp.com/healthcare-pharmaceuticals-software/a/clinicmaster/reviews/" target="_blank"
+                            rel="noopener">
+                            <img src="https://brand-assets.getapp.com/badge/88d287d0-0dd5-4ad3-806e-6e564d5b1c3c.png"
+                                alt="GetApp Badge" class="h-12 w-auto" style="max-width:120px;" />
+                        </a>
+                        <a href="https://www.softwareadvice.com/medical/clinicmaster-profile/reviews/" target="_blank"
+                            rel="noopener">
+                            <img src="https://brand-assets.softwareadvice.com/badge/8e282fc3-f0de-49fd-81be-fca97b3e73be.png"
+                                alt="Software Advice Badge" class="h-12 w-auto" style="max-width:120px;" />
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="relative mt-10 lg:mt-0 flex justify-center">
+                    <img src="../assets/images/cm_hero_image.png"
+                        alt="Healthcare professionals collaborating and viewing a digital clinicmaster dashboard on a tablet in a bright modern clinic setting. The dashboard displays patient scheduling and management features. The atmosphere is focused and positive. Visible text on the dashboard includes Clinicmaster branding and navigation labels for scheduling and case management."
+                        class="rounded-lg w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-full h-56 sm:h-72 md:h-96 lg:h-full object-cover"
+                        loading="lazy"
+                        onerror="handleImgError(this, 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2940&auto=format&fit=crop')" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="bg-white py-12 border-b border-border">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
+
+            <div class="text-center mb-8">
+                <p class="text-secondary text-sm font-medium">Trusted by over 1,000 healthcare Organizations nationwide</p>
+            </div>
+
+            <div class="relative w-full h-16 overflow-hidden">
+                <div class="absolute left-0 top-0 flex items-center h-full animate-scroll-logos" style="animation: scroll-logos 30s linear infinite;">
+                    <div class="flex items-center gap-24 whitespace-nowrap" style="width:100vw;">
+                        <!-- Logos (single set) -->
+                        <img src="../assets/images/ASPLogo.svg" alt="ASP Logo" style="background-color: #007398;" class="mx-8 w-32 h-12" />
+                        <img src="../assets/images/logo-kinatex.svg" alt="Kinatex Logo" class="mx-8 w-32 h-12" />
+                        <img src="../assets/images/logo-cbi.svg" alt="CBI Logo" class="mx-8 w-32 h-12" />
+                        <img src="../assets/images/logo-pcn.svg" alt="PCN Logo" class="mx-8 w-32 h-12" />
+                        <img src="../assets/images/logo-physiomed.webp" alt="Physiomed Logo" class="mx-8 w-32 h-12" />
+                        <img src="../assets/images/logo-physioextra.svg" alt="Physioextra Logo" class="mx-8 w-32 h-12" />
+                    </div>
+                    <div class="flex items-center gap-24 whitespace-nowrap" style="width:100vw;">
+                        <!-- Logos (duplicate set for seamless scroll) -->
+                        <img src="../assets/images/ASPLogo.svg" alt="ASP Logo" style="background-color: #007398;" class="mx-8 w-32 h-12" />
+                        <img src="../assets/images/logo-kinatex.svg" alt="Kinatex Logo" class="mx-8 w-32 h-12" />
+                        <img src="../assets/images/logo-cbi.svg" alt="CBI Logo" class="mx-8 w-32 h-12" />
+                        <img src="../assets/images/logo-pcn.svg" alt="PCN Logo" class="mx-8 w-32 h-12" />
+                        <img src="../assets/images/logo-physiomed.webp" alt="Physiomed Logo" class="mx-8 w-32 h-12" />
+                        <img src="../assets/images/logo-physioextra.svg" alt="Physioextra Logo" class="mx-8 w-32 h-12" />
+                    </div>
+                </div>
+            </div>
+            <style>
+            @keyframes scroll-logos {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(-100vw); }
+            }
+            .animate-scroll-logos {
+              min-width: 200vw; /* Ensures enough width for seamless scroll */
+              display: flex;
+            }
+            </style>
+        </div>
+    </section>
+
+    <!-- Platform Overview - Interactive Feature Explorer -->
+    <section class="py-20 bg-surface-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16 text-left">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">A Complete Healthcare Practice Platform
+                </h2>
+                <p class="text-xl text-secondary max-w-3xl"> Learn how ClinicMaster makes managing appointments, patient
+                    records, and cases simple — helping your team work more efficiently and your patients get better
+                    care.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Scheduling & Case Management Module -->
+                <div
+                    class="group bg-white rounded-lg p-6 shadow-soft hover:shadow-modal transition-smooth cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-accent group-hover:text-white transition-smooth">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Scheduling & Case Management</h3>
+                    <p class="text-text-secondary text-sm mb-4">Clinicmaster's intuitive all-in-one solution, brimming
+                        with powerful schedule management features. Empower clients to book appointments at their
+                        convenience and ensure repeat visits.</p>
+                    <div style="height:6px; width:25%; background-color:#FA8072; margin:0 0 1.5rem 0; border-radius:3px;"
+                        class=""></div>
+                    <a href="product_features_schedulingandcasemanagement.html"
+                        class="text-primary  hover:text-secondary transition-smooth text-md font-medium">Learn more
+                        -></a>
+                </div>
+
+                <!-- EMR Module -->
+                <div
+                    class="group bg-white rounded-lg p-6 shadow-soft hover:shadow-modal transition-smooth cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-smooth">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm6 1.414L16.586 8H14a2 2 0 01-2-2V3.414zM8 10h4a1 1 0 100-2H8a1 1 0 100 2zm0 4h4a1 1 0 100-2H8a1 1 0 100 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Electronic Medical Records</h3>
+                    <p class="text-text-secondary text-sm mb-4">Charting with Clinicmaster. Experience hassle-free
+                        charting through Clinicmaster's digital charting and electronic medical record (EMR) system.
+                        Discover innovative features that enable smarter charting, leading to improved patient outcomes.
+                    </p>
+                    <div style="height:6px; width:25%; background-color:#FA8072; margin:0 0 1.5rem 0; border-radius:3px;"
+                        class=""></div>
+                    <a href="emr_features.html"
+                        class="text-primary  hover:text-secondary transition-smooth text-md font-medium">Learn more
+                        -></a>
+                </div>
+
+                <!-- Billing Module -->
+                <div
+                    class="group bg-white rounded-lg p-6 shadow-soft hover:shadow-modal transition-smooth cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-success group-hover:text-white transition-smooth">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Revenue Cycle Management</h3>
+                    <p class="text-text-secondary text-sm mb-4">Your Clinic's Finances with Clinicmaster's Billing
+                        Functions. Access all the tools you need to oversee your clinic's financial flow. Simplify
+                        client payments, making the process quick and convenient. Experience efficient billing that
+                        ensures prompt payments for you and seamless transactions for your clients.</p>
+                    <div style="height:6px; width:25%; background-color:#FA8072; margin:0 0 1.5rem 0; border-radius:3px;"
+                        class=""></div>
+                    <a href="revenue_cycle_management_features.html"
+                        class="text-primary  hover:text-secondary transition-smooth text-md font-medium">Learn more
+                        -></a>
+                </div>
+
+                <!-- Practice Management Module -->
+                <div
+                    class="group bg-white rounded-lg p-6 shadow-soft hover:shadow-modal transition-smooth cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-secondary group-hover:text-white transition-smooth">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Practice Management</h3>
+                    <p class="text-text-secondary text-sm mb-4">Secure patient communication, appointment booking, and
+                        health record access.</p>
+                    <div style="height:6px; width:25%; background-color:#FA8072; margin:0 0 1.5rem 0; border-radius:3px;"
+                        class=""></div>
+                    <a href="practice_management_features.html"
+                        class="text-primary  hover:text-secondary transition-smooth text-md font-medium">Learn more
+                        -></a>
+                </div>
+                <!-- Client Engagement Module -->
+                <div
+                    class="group bg-white rounded-lg p-6 shadow-soft hover:shadow-modal transition-smooth cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-smooth">
+                        <!-- Icon: Chat bubbles for engagement -->
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M18 10c0 3.866-3.582 7-8 7a8.96 8.96 0 01-3.39-.63l-3.13.83a1 1 0 01-1.23-1.23l.83-3.13A7.96 7.96 0 012 10c0-3.866 3.582-7 8-7s8 3.134 8 7zm-11 1a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Client Engagement</h3>
+                    <p class="text-text-secondary text-sm mb-4">Empower patients with secure access to health records,
+                        appointment scheduling, and communication with healthcare providers. Foster a collaborative and
+                        patient-centric approach to healthcare management.</p>
+                    <div style="height:6px; width:25%; background-color:#FA8072; margin:0 0 1.5rem 0; border-radius:3px;"
+                        class=""></div>
+                    <a href="client_engagement_features.html"
+                        class="text-primary  hover:text-secondary transition-smooth text-md font-medium">Learn more
+                        -></a>
+                </div>
+
+                <!-- Business Intelligence Module -->
+                <div
+                    class="group bg-white rounded-lg p-6 shadow-soft hover:shadow-modal transition-smooth cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-accent group-hover:text-white transition-smooth">
+                        <!-- Icon: Bar chart for Business Intelligence -->
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <rect x="3" y="10" width="3" height="7" rx="1" />
+                            <rect x="8.5" y="6" width="3" height="11" rx="1" />
+                            <rect x="14" y="3" width="3" height="14" rx="1" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Business Intelligence</h3>
+                    <p class="text-text-secondary text-sm mb-4">Data-Driven Decision-Making with Customizable KPI
+                        Reports. Gain comprehensive insights for informed choices with our user-friendly, customizable
+                        key performance indicator (KPI) reports. Ensure your practice is on the path to success by
+                        accessing essential information you need to make impactful data-driven decisions.</p>
+                    <div style="height:6px; width:25%; background-color:#FA8072; margin:0 0 1.5rem 0; border-radius:3px;"
+                        class=""></div>
+                    <a href="business_intelligence_features.html"
+                        class="text-primary  hover:text-secondary transition-smooth text-md font-medium">Learn more
+                        -></a>
+                </div>
+
+                <!-- Security -->
+                <div
+                    class="group bg-white rounded-lg p-6 shadow-soft hover:shadow-modal transition-smooth cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-success group-hover:text-white transition-smooth">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill="currentColor"
+                                d="M10 2C10.28 2 10.56 2.07 10.8 2.21l6 3.43A1 1 0 0117 6.5v4.74c0 4.13-3.06 7.85-6.6 8.7a1 1 0 01-.8 0C6.06 19.09 3 15.37 3 11.24V6.5a1 1 0 01.2-.86l6-3.43A1 1 0 0110 2zm0 2.18L5 6.09v5.15c0 3.38 2.5 6.44 5 7.18 2.5-.74 5-3.8 5-7.18V6.09l-5-1.91z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Security</h3>
+                    <p class="text-text-secondary text-sm mb-4">Privacy is Our Priority. We prioritize your privacy by
+                        encrypting all data before storage. Our solution is hosted on Microsoft Azure servers, renowned
+                        for being among the most secure and compliant servers globally. Rest assured that your clients'
+                        data remains completely safe and confidential.</p>
+                    <div style="height:6px; width:25%; background-color:#FA8072; margin:0 0 1.5rem 0; border-radius:3px;"
+                        class=""></div>
+                    <a href="security_compliance.html"
+                        class="text-primary  hover:text-secondary transition-smooth text-md font-medium">Learn more
+                        -></a>
+                </div>
+
+                <!-- Partner Integrations -->
+                <div
+                    class="group bg-white rounded-lg p-6 shadow-soft hover:shadow-modal transition-smooth cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-secondary group-hover:text-white transition-smooth">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Partner Integrations</h3>
+                    <p class="text-text-secondary text-sm mb-4">Secure patient communication, appointment booking, and
+                        health record access.</p>
+                    <div style="height:6px; width:25%; background-color:#FA8072; margin:0 0 1.5rem 0; border-radius:3px;"
+                        class=""></div>
+                    <a href="integration_features.html"
+                        class="text-primary  hover:text-secondary transition-smooth text-md font-medium">Learn more
+                        -></a>
+                </div>
+
+                <!-- AI Solutions Suite -->
+                <div
+                    class="group bg-white rounded-lg p-6 shadow-soft hover:shadow-modal transition-smooth cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-secondary group-hover:text-white transition-smooth">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">AI Solutions Suite</h3>
+                    <p class="text-text-secondary text-sm mb-4">Empower your practice with intuitive, hands-free AI
+                        built right into your workflow.</p>
+                    <div style="height:6px; width:25%; background-color:#FA8072; margin:0 0 1.5rem 0; border-radius:3px;"
+                        class=""></div>
+                    <a href="https://ai.clinicmaster.com/"
+                        class="text-primary  hover:text-secondary transition-smooth text-md font-medium">Learn more
+                        -></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Spotlight -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Spotlight Column -->
+                <div>
+                    <div class="text-center md:text-left mb-10">
+                        <h2 class="text-3xl lg:text-4xl text-white text-left mb-4">Redefining Clinic Excellence with AI
+                        </h2>
+                        <p class="text-xl text-white text-left max-w-3xl"> ClinicMaster’s AI Suite streamlines charting
+                            and reception tasks so your team can work smarter, save time, and focus on exceptional
+                            patient care. From real-time SOAP note generation to flawless appointment management, our AI
+                            handles the busywork — with new features coming soon to make your clinic even more
+                            efficient.</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+                        <a href="https://info.clinicmaster.com/compare-our-practice-management-platform"
+                            class="px-6 py-3 bg-white text-primary rounded-lg font-semibold text-center">Explore AI
+                            Suite</a>
+                        <a href="https://info.clinicmaster.com/compare-our-practice-management-platform"
+                            class="px-6 py-3 bg-primary border border-white text-white rounded-lg font-semibold text-center">Join
+                            Early Access</a>
+                    </div>
+                </div>
+                <!-- Image -->
+                <div>
+                    <div class="grid grid-cols-1 h-full">
+                        <div class="relative flex items-center justify-center h-full w-full">
+                            <img src="../assets/images/cm_hero_image.png"
+                                alt="Healthcare professionals collaborating and viewing a digital clinicmaster dashboard on a tablet in a bright modern clinic setting. The dashboard displays patient scheduling and management features. The atmosphere is focused and positive. Visible text on the dashboard includes Clinicmaster branding and navigation labels for scheduling and case management."
+                                class="rounded-lg w-full h-full object-cover" loading="lazy"
+                                onerror="handleImgError(this, 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2940&auto=format&fit=crop')" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialty-Focused Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-left mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4 text-left">Tailored Solution for Every
+                    Practice Size & Discipline</h2>
+                <p class="text-xl text-secondary max-w-3xl text-left"> Specialized features, modules and workflows
+                    customized to your needs and type of healthcare practice.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Single Clinic -->
+                <div class="bg-background-fog rounded-lg p-8 hover:shadow-modal transition-smooth">
+                    <img src="../assets/images/singleclinic_icon.svg" alt="Clinic icon representing a single clinic"
+                        class="w-32 h-32 mx-auto object-contain rounded-lg mb-6" loading="lazy"
+                        onerror="this.src='https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                    <h3 class="text-xl font-bold text-secondary mb-3">Single clinics</h3>
+                    <p class="text-secondary mb-4">For individual practitioners or small clinics with few employees.
+                        Streamline your operations and focus on patients.</p>
+                </div>
+
+                <!-- Multi-location Clinic -->
+                <div class="bg-background-fog rounded-lg p-8 hover:shadow-modal transition-smooth">
+                    <img src="../assets/images/multilocation_icon.svg"
+                        alt="Clinic icon representing a multi-location clinic"
+                        class="w-32 h-32 mx-auto object-contain rounded-lg mb-6" loading="lazy"
+                        onerror="this.src='https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                    <h3 class="text-xl font-bold text-secondary mb-3">Multi-location clinics</h3>
+                    <p class="text-secondary mb-4">For growing practices with multiple practitioners and increasing
+                        client bases. Scale your business effortlessly.</p>
+                </div>
+
+                <!-- Large Enterprise -->
+                <div class="bg-background-fog rounded-lg p-8 hover:shadow-modal transition-smooth">
+                    <img src="/assets/images/enterprise_icon.svg" alt="Orthopedic practice"
+                        class="w-32 h-32 mx-auto object-contain rounded-lg mb-6" loading="lazy"
+                        onerror="this.src='https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    <h3 class="text-xl font-bold text-secondary mb-3">Large Enterprises</h3>
+                    <p class="text-secondary mb-4">Supporting multi-location and large regional or national clinics with
+                        seamless data integration and comprehensive oversight.</p>
+                </div>
+
+                <div>
+                    <a href="pricing.html"
+                        class="px-6 py-3 bg-white border border-secondary text-secondary-btn rounded-lg font-semibold text-center">Compare
+                        plans</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Success Metrics -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-left mb-16">
+                <h2 class="text-3xl lg:text-4xl text-white font-bold mb-4"> Empowering Healthcare Excellence with
+                    Clinicmaster</h2>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl lg:text-5xl text-left font-bold mb-2">90%</div>
+                    <div class="text-white text-left">of your clients will view your text messages with Clinicmaster
+                    </div>
+                </div>
+                <div>
+                    <div class="text-4xl lg:text-5xl text-left font-bold mb-2">15K+</div>
+                    <div class="text-white text-left">professionals use our EMR system, producing over 31,130 chart
+                        entries every day</div>
+                </div>
+                <div>
+                    <div class="text-4xl lg:text-5xl text-left font-bold mb-2">1B+</div>
+                    <div class="text-white text-left"> in medical services are billed annually with Clinicmaster</div>
+                </div>
+                <div>
+                    <div class="text-4xl lg:text-5xl text-left font-bold mb-2">9.5M</div>
+                    <div class="text-white text-left">appointments are booked every year with Clinicmaster</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial title and description -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
+            <div class="text-left">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4 text-left">What Healthcare Providers Say
+                </h2>
+                <p class="text-xl text-secondary max-w-3xl text-left">Real testimonials from medical professionals using
+                    Clinicmaster</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Carousel-->
+    <section class="py-20 bg-background-fog">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="relative mx-auto">
+                <!-- Carousel Wrapper -->
+                <div id="testimonial-carousel" class="overflow-hidden">
+                    <!-- Slides -->
+                    <!-- Testimonial 0-->
+                    <div class="transition-all duration-500" id="testimonial-slide-0">
+                        <div class="flex items-left mb-6">
+                            <!-- Headshot image section -->
+                            <img src="../assets/images/testimonials/richard.jpg"
+                                alt="Headshot of Richard, Physiotherapist, Ottawa"
+                                class="w-16 h-16 rounded-full object-cover mr-4 bg-gray-200" loading="lazy"
+                                onerror="this.src='https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=128&h=128'; this.onerror=null;" />
+                            <div>
+                                <h4 class="font-semibold text-secondary">Richard</h4>
+                                <p class="text-secondary text-sm">Physiotherapist, Ottawa</p>
+                            </div>
+                        </div>
+                        <p class="text-secondary mb-4">"I've been using Clinic Master since 1999 (24 years). I've
+                            watched their software grow, adapt, improve and change all that time. I can honestly say
+                            that the Addatech/Clinic Master are obsessed with increasing value for the clinic owner.
+                            They have become a one-stop-shop for everything a clinic needs to do. I have compared their
+                            software to competitors and each time I do, my research shows me that if I switch to another
+                            software, I would have less report functions, I would have less value and most importantly,
+                            I would be losing valuable bottom line to online payment processors. Clinic Master offers
+                            great value overall and I only see this getting better as they continue adding features."
+                        </p>
+                        <div class="text-primary font-medium text-sm">45% time savings achieved</div>
+                    </div>
+                    <!-- Testimonial 1-->
+                    <div class="hidden transition-all duration-500" id="testimonial-slide-1">
+                        <div class="flex items-center mb-6">
+                            <!-- Headshot image section -->
+                            <img src="../assets/images/testimonials/selina.jpg"
+                                alt="Headshot of Selina, METI Practitioner, Austin"
+                                class="w-16 h-16 rounded-full object-cover mr-4 bg-gray-200" loading="lazy"
+                                onerror="this.src='https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=128&h=128'; this.onerror=null;" />
+                            <div>
+                                <h4 class="font-semibold text-secondary">Selina</h4>
+                                <p class="text-secondary text-sm">METI Practitioner, Austin</p>
+                            </div>
+                        </div>
+                        <p class="text-secondary mb-4">"Clinicmaster saves me time and makes communication with my
+                            clients easier. It has helped me organize my practice more efficiently. I especially
+                            appreciate the communication and charting features."</p>
+                        <div class="text-primary font-medium text-sm">Improved client communication</div>
+                    </div>
+                    <!-- Testimonial 2-->
+                    <div class="hidden transition-all duration-500" id="testimonial-slide-2">
+                        <div class="flex items-center mb-6">
+                            <!-- Headshot image section -->
+                            <img src="../assets/images/testimonials/jason.jpg"
+                                alt="Headshot of Jason, Physiotherapist, Ottawa"
+                                class="w-16 h-16 rounded-full object-cover mr-4 bg-gray-200" loading="lazy"
+                                onerror="this.src='https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=128&h=128'; this.onerror=null;" />
+                            <div>
+                                <h4 class="font-semibold text-secondary">Jason</h4>
+                                <p class="text-secondary text-sm">Chiropractor, New York</p>
+                            </div>
+                        </div>
+                        <p class="text-secondary mb-4">"Since Covid, I transitioned to a practice that has no staff.
+                            At first, I was worried if I could handle running a busy office with no staff. The ease
+                            of use, the patient portal and the automation take all of that stress away."</p>
+                        <div class="text-primary font-medium text-sm">60% efficiency improvement</div>
+                    </div>
+                    <!-- Testimonial 3-->
+                    <div class="hidden transition-all duration-500" id="testimonial-slide-3">
+                        <div class="flex items-center mb-6">
+                            <!-- Headshot image section -->
+                            <img src="../assets/images/testimonials/ikuko.jpg"
+                                alt="Headshot of Ikuko, Director of operations, Vancouver"
+                                class="w-16 h-16 rounded-full object-cover mr-4 bg-gray-200" loading="lazy"
+                                onerror="this.src='https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=128&h=128'; this.onerror=null;" />
+                            <div>
+                                <h4 class="font-semibold text-secondary">Ikuko</h4>
+                                <p class="text-secondary text-sm">Director of operations, Vancouver</p>
+                            </div>
+                        </div>
+                        <p class="text-secondary mb-4">"Clinicmaster has more reports available. The concept of the
+                            accounting features is lined up with our accountant who is very professional. When you
+                            compare the value and capability of other products, Clinicmaster made sense to us."</p>
+                        <div class="text-primary font-medium text-sm">60% efficiency improvement</div>
+                    </div>
+                    <!-- Testimonial 4-->
+                    <div class="hidden transition-all duration-500" id="testimonial-slide-4">
+                        <div class="flex items-center mb-6">
+                            <!-- Headshot image section -->
+                            <img src="../assets/images/testimonials/ikuko.jpg"
+                                alt="Headshot of Ikuko, Director of operations, Vancouver"
+                                class="w-16 h-16 rounded-full object-cover mr-4 bg-gray-200" loading="lazy"
+                                onerror="this.src='https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=128&h=128'; this.onerror=null;" />
+                            <div>
+                                <h4 class="font-semibold text-secondary">Nitin N.</h4>
+                                <p class="text-secondary text-sm">Physiotherapist, Physiomed</p>
+                            </div>
+                        </div>
+                        <p class="text-secondary mb-4">"My experience with AI charting has been absolutely amazing.
+                            As a practitioner who sees hundreds of patients every month, charting used to take up a
+                            significant amount of time - time that should be dedicated to patient care [...] I was
+                            able to complete my SOAP notes and assessments in less than a minute, which has been the
+                            best advancement in my practice in the last 10 years. "</p>
+                        <div class="text-primary font-medium text-sm">Charting time reduced to under a minute per
+                            patient</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <div class="flex justify-center mt-6 gap-4">
+                <button id="testimonial-prev"
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-50 hover:bg-primary-50 text-secondary shadow transition"
+                    aria-label="Previous testimonial">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button id="testimonial-next"
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-50 hover:bg-primary-50 text-secondary shadow transition"
+                    aria-label="Next testimonial">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Review Badges -->
+        <div class="flex flex-wrap justify-center items-center gap-4 mt-8 mb-4">
+            <a href="https://www.capterra.com/p/217435/Clinicmaster/reviews/" target="_blank" rel="noopener">
+                <img src="https://brand-assets.capterra.com/badge/10e80280-f7a1-46ca-8b00-e341f62a8fb8.svg"
+                    alt="Capterra Badge" class="h-12 w-auto" style="max-width:120px;" />
+            </a>
+            <a href="https://www.getapp.com/healthcare-pharmaceuticals-software/a/clinicmaster/reviews/" target="_blank"
+                rel="noopener">
+                <img src="https://brand-assets.getapp.com/badge/88d287d0-0dd5-4ad3-806e-6e564d5b1c3c.png"
+                    alt="GetApp Badge" class="h-12 w-auto" style="max-width:120px;" />
+            </a>
+            <a href="https://www.softwareadvice.com/medical/clinicmaster-profile/reviews/" target="_blank"
+                rel="noopener">
+                <img src="https://brand-assets.softwareadvice.com/badge/8e282fc3-f0de-49fd-81be-fca97b3e73be.png"
+                    alt="Software Advice Badge" class="h-12 w-auto" style="max-width:120px;" />
+            </a>
+        </div>
+
+    </section>
+
+    <!--Trusted By Section-->
+    <section class="py-20 bg-surface-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-6">Trusted By Leading Organizations</h2>
+            <p class="text-xl text-secondary max-w-3xl text-left">From national providers to growing regional networks,
+                ClinicMaster is the EMR of choice for leaders who
+                demand reliability,
+                scalability, and innovation.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                <img src="../assets/images/logos/org1.png" alt="Organization 1" class="h-12 mx-auto" />
+                <img src="../assets/images/logos/org2.png" alt="Organization 2" class="h-12 mx-auto" />
+                <img src="../assets/images/logos/org3.png" alt="Organization 3" class="h-12 mx-auto" />
+                <img src="../assets/images/logos/org4.png" alt="Organization 4" class="h-12 mx-auto" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Compliance Section -->
+    <section class="py-20 bg-surface-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-6">Enterprise-Grade Security &
+                        Compliance</h2>
+                    <p class="text-xl text-secondary mb-8">Your patient data is protected by the highest security
+                        standards in healthcare technology.</p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-success-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-secondary mb-2">HIPAA Compliance</h3>
+                                <p class="text-text-secondary">Full HIPAA compliance with comprehensive audit trails and
+                                    access controls.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm0 5a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-secondary mb-2">End-to-End Encryption</h3>
+                                <p class="text-text-secondary">256-bit AES encryption for data at rest and in transit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-accent-800" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-secondary mb-2">SOC 2 Type II Certified</h3>
+                                <p class="text-text-secondary">Independently audited security controls and procedures.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="security_compliance.html"
+                            class="text-primary font-medium hover:text-primary-600 transition-smooth">
+                            View Complete Security Documentation →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                        alt="Healthcare data security" class="rounded-lg shadow-modal w-full h-96 object-cover"
+                        loading="lazy"
+                        onerror="this.src='https://images.pixabay.com/photo/2017/10/04/09/56/laboratory-2815641_1280.jpg'; this.onerror=null;" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 bg-background-mulberry text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-left">
+                <h2 class="text-3xl lg:text-4xl text-white font-bold mb-6">Ready to Transform Your Practice?</h2>
+                <p class="text-xl text-white mb-8">Join thousands of healthcare providers who have
+                    streamlined their workflows and improved patient care with Clinicmaster</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="demo_booking_form.html" class="btn-third hover:shadow-modal">
+                        Request Demo
+                    </a>
+                    <a href="https://info.clinicmaster.com/compare-our-practice-management-platform"
+                        class="border border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-secondary transition-smooth">
+                        Sign-up for Webinars
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src="../assets/images/logo-horizontal-emblem-white.svg" alt="White Clinicmaster Logo"
+                            class="h-8 w-auto" loading="lazy"
+                            onerror="handleImgError(this, 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2940&auto=format&fit=crop')" />
+                    </div>
+                    <p class="text-gray-300 mb-6 max-w-md">Transforming healthcare practices with intelligent care
+                        management solutions that enhance the doctor-patient relationship.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Platform</h3>
+                    <ul class="space-y-2">
+                        <li><a href="platform_demo.html"
+                                class="text-gray-300 hover:text-white transition-smooth">Demo</a></li>
+                        <li><a href="pricing_roi_calculator.html"
+                                class="text-gray-300 hover:text-white transition-smooth">Pricing</a></li>
+                        <li><a href="security_compliance.html"
+                                class="text-gray-300 hover:text-white transition-smooth">Security</a></li>
+                        <li><a href="implementation_support.html"
+                                class="text-gray-300 hover:text-white transition-smooth">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-smooth">About us</a></li>
+                        <li><a href="customer_stories.html"
+                                class="text-gray-300 hover:text-white transition-smooth">Case Studies</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-smooth">Documentation</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-smooth">API</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-smooth">Training</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Clinicmaster. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+        <script src="js/homepage.js"></script>
+</html>

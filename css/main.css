@@ -1,0 +1,187 @@
+/* Clinicmaster Website UI Style Guide */
+
+/* 1. Typography */
+:root {
+  --font-title: 'Open Sans', Arial, sans-serif;
+  --font-body: 'Roboto', Arial, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/* Headings */
+h1 {
+  font-family: var(--font-title);
+  font-size: 3.75rem; /* 60px */
+  font-weight: var(--font-weight-bold);
+  line-height: 1.4;
+  color: #5E3869; /* Grape */
+}
+h2 {
+  font-family: var(--font-title);
+  font-size: 3rem; /* 48px */
+  font-weight: var(--font-weight-bold);
+  line-height: 1.4;
+  color: #5E3869;
+}
+h3 {
+  font-family: var(--font-title);
+  font-size: 2.25rem; /* 36px */
+  font-weight: var(--font-weight-bold);
+  line-height: 1.4;
+  color: #5E3869;
+}
+h4 {
+  font-family: var(--font-title);
+  font-size: 1.75rem; /* 28px */
+  font-weight: var(--font-weight-bold);
+  line-height: 1.4;
+  color: #5E3869;
+}
+
+/* Body Text */
+body, p {
+  font-family: var(--font-body);
+  font-size: 1.125rem; /* 18px */
+  font-weight: var(--font-weight-regular);
+  line-height: 1.6;
+  color: #2D1939; /* Mulberry */
+}
+
+/* Navigation */
+.nav-text {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-regular);
+  color: #2D1939;
+}
+.nav-cta {
+  font-family: var(--font-title);
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-bold);
+  color: #5E3869;
+}
+
+/* Links */
+a {
+  text-decoration: underline;
+  color: #0F6EA8; /* Peacock */
+}
+
+/* 2. Color Palette */
+:root {
+  --color-grape: #5E3869;
+  --color-peacock: #0F6EA8;
+  --color-seafoam: #23C399;
+  --color-mulberry: #2D1939;
+  --color-salmon: #FC7C64;
+  --color-fog: #EAF2FF;
+  --color-white: #FFFFFF;
+}
+
+/* Backgrounds */
+.bg-grape { background: var(--color-grape); color: var(--color-white); }
+.bg-peacock { background: var(--color-peacock); color: var(--color-white); }
+.bg-fog { background: var(--color-fog); }
+.bg-white { background: var(--color-white); }
+.bg-mulberry { background: var(--color-mulberry); color: var(--color-white); }
+.bg-salmon { background: var(--color-salmon); }
+
+/* 3. Components */
+
+/* Buttons */
+.btn-primary {
+  background: var(--color-seafoam);
+  color: var(--color-white);
+  border-radius: 8px;
+  font-weight: var(--font-weight-bold);
+  border: none;
+  padding: 0.75em 2em;
+  cursor: pointer;
+}
+.btn-secondary-outline {
+  background: transparent;
+  color: var(--color-peacock);
+  border: 2px solid var(--color-peacock);
+  border-radius: 8px;
+  font-weight: var(--font-weight-bold);
+  padding: 0.75em 2em;
+  cursor: pointer;
+}
+.btn-secondary-solid {
+  background: var(--color-white);
+  color: var(--color-grape);
+  border-radius: 8px;
+  font-weight: var(--font-weight-bold);
+  border: none;
+  padding: 0.75em 2em;
+  cursor: pointer;
+}
+
+/* Cards */
+.card {
+  background: var(--color-fog);
+  border-radius: 12px;
+  padding: 2em;
+  box-shadow: 0 2px 8px rgba(46, 25, 57, 0.04);
+}
+
+/* Icons */
+.icon {
+  stroke-width: 2px;
+  border-radius: 4px;
+  fill: none;
+  stroke: currentColor;
+}
+
+/* Navigation Arrow */
+.arrow {
+  border: none;
+  background: none;
+  stroke: var(--color-mulberry);
+  stroke-width: 2px;
+}
+
+/* Pagination Dots */
+.pagination-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-peacock);
+  opacity: 0.2;
+  display: inline-block;
+  margin: 0 2px;
+}
+.pagination-dot.active {
+  opacity: 1;
+}
+
+/* 4. Accessibility */
+:focus {
+  outline: 2px solid var(--color-peacock);
+  outline-offset: 2px;
+}
+[aria-live] {
+  border: 2px dashed var(--color-salmon);
+  padding: 0.5em;
+}
+label {
+  font-weight: var(--font-weight-medium);
+  display: block;
+  margin-bottom: 0.5em;
+}
+input, textarea, select {
+  border: 2px solid var(--color-fog);
+  border-radius: 4px;
+  padding: 0.5em;
+  font-size: 1rem;
+}
+input:focus, textarea:focus, select:focus {
+  border-color: var(--color-peacock);
+}
+
+/* Utility Classes */
+.bold { font-weight: var(--font-weight-bold); }
+.italic { font-style: italic; }
+.underline { text-decoration: underline; }
